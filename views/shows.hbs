@@ -1,0 +1,13 @@
+<h1 align="center">Shows</h1>
+<form method ="post" action="">
+	<input type="radio" name="genre" value="TV"> TV
+ 	<input type="radio" name="genre" value="Movie"> Movie
+ 	<input type="radio" name="genre" value="OVA"> OVA
+ 	<input type="radio" name="genre" value="ONA"> ONA
+ 	<input type="radio" name="genre" value="All"> All
+	<input type="submit" value="Filter">
+</form>
+<br>
+{{#each shows}}
+<p align="center">{{name}} (<i>{{rating}}</i>) - {{comments}} | <i>{{genre}}</i></p>
+{{/each}}
